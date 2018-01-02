@@ -1,0 +1,13 @@
+The weights are : [0.004511842470872747, 0.025214338981127064, -0.002047591261006843, 0.026119194518773873,
+                  -0.006176820412680187, 0.015309716365602879, 0.04949265554815059, 0.05501967569041159,
+                   0.05588775443698047, 0.13094240239865204, 0.07331502973819604, 0.10926491920366958,
+                   0.13202280163776461, 0.1371352457711994, 0.37357812206310703]
+The error is: 6.489497339297866
+
+choosing alpha : i tested all alpha = 3^i (where -17<=i<=2), each alpha was checked with 
+20,000 iterations of "imrovingCoefficients()" whtich are the gradient descent steps.
+ the one with lowest error (using calculateSE(Instances data) ) where chosen to be alpha (=3^-13)
+stopping condition: every 100 iterations i calculated the differnces between the current error and the last one,
+if it was smaller than EPSILON(=0.003) - stop the descent; otherwise -continue.
+
+
